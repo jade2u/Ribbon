@@ -57,7 +57,7 @@ function headCard(name, list, genre){
         else{ buttons[i].style.color = "white";}
     } 
 
-    //$("#head-card").fadeIn("slow");
+    $("#head-card").fadeIn("slow");
   
 }
 
@@ -109,7 +109,7 @@ function new_card(content, genre, card_num, pic_id, alt){
             } 
         }
     }
-    //$("#title-cards").fadeIn("slow");
+    $("#title-cards").fadeIn("slow");
 }
 
 
