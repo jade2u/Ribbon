@@ -185,12 +185,12 @@ if(data_class == "tracks"){
                 data.artists.forEach(artist => {
                   //get 1st artist genre
                   console.log(artist.genres);
-                  let track_genre = artist.genres[0].toString();
+                  //let track_genre = artist.genres[0].toString();
                   //make cards
                   for(var i = 0; i < tracks_list.length; i++){
                     headCard('tracks', 
-                    "<svg class='num-place' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 88.61 95.66'><path d='" + svg_nums[i] + "' /></svg>" + "<li>" + tracks_list[i].song + "</li>", 
-                    track_genre)
+                    "<svg class='num-place' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 88.61 95.66'><path d='" + svg_nums[i] + "' /></svg>" + "<li>" + tracks_list[i].song + "</li>"/*, 
+                    track_genre*/)
                     new_card(
                       //ranking number
                       "<svg class='num-place' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 88.61 95.66'><path d='" + svg_nums[i] + "' /></svg>" +
@@ -200,7 +200,7 @@ if(data_class == "tracks"){
                       "<h4>" + tracks_list[i].song + "</h4>"  +
                       //artist name
                       "<h5>" + tracks_list[i].artist + "</h5>", 
-                      track_genre, 
+                      /*track_genre,*/ 
                       tracks_list.length,
                       tracks_list[i].pic,
                       tracks_list[i].song + " by " + tracks_list[i].artist
