@@ -185,7 +185,7 @@ if(data_class == "tracks"){
                 data.artists.forEach(artist => {
                   //get 1st artist genre
                   console.log(artist.genres);
-                  let track_genre = artist.genres.toString();
+                  let track_genre = artist.genres[].toString();
                   //make cards
                   for(var i = 0; i < tracks_list.length; i++){
                     headCard('tracks', 
